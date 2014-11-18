@@ -1,0 +1,21 @@
+#header nav {
+	background-color:#3FF;
+}
+#header nav ul {text-align:center; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+#header nav ul li {float:left;display:inline; background-color:#3CF;}
+#header nav ul li:hover {background:#FF9;}
+#header nav ul li a {display:block;padding:15px 25px;color:#444;}
+#header nav ul li ul {position:absolute;width:110px;background:#FFF;}
+#header nav ul li ul li {width:110px;}
+#header nav ul li ul li a {display:block;padding:15px 10px;color:#444;}
+#header nav ul li ul li:hover a {background:#FF9;}
+#header nav ul li ul.fallback {display:none;}
+#header nav ul li:hover ul.fallback {display:block;}
+
+#header{
+	background-color:#3CF;
+}
+
+#banner{
+	text-align:center;
+}
