@@ -9,11 +9,7 @@ include("header.php");
 <head>
 <title>PET STORE</title>
 
-<link rel="stylesheet" href="css/menu.css" type="text/css" />
 
-<script src="jquery/jquery.min.js"></script>
-<script type="text/javascript" src="jquery/menu.js" >
-</script>
 </head>
 
 <body>
@@ -24,5 +20,7 @@ include("header.php");
 <br />
 hello..
 it is body !!
+<br />
+<a href="register.php">Click here for register page</a>
 </body>
 </html>

@@ -1,21 +1,116 @@
-#header nav {
-	background-color:#3FF;
-}
-#header nav ul {text-align:center; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
-#header nav ul li {float:left;display:inline; background-color:#3CF;}
-#header nav ul li:hover {background:#FF9;}
-#header nav ul li a {display:block;padding:15px 25px;color:#444;}
-#header nav ul li ul {position:absolute;width:110px;background:#FFF;}
-#header nav ul li ul li {width:110px;}
-#header nav ul li ul li a {display:block;padding:15px 10px;color:#444;}
-#header nav ul li ul li:hover a {background:#FF9;}
-#header nav ul li ul.fallback {display:none;}
-#header nav ul li:hover ul.fallback {display:block;}
 
-#header{
-	background-color:#3CF;
-}
 
 #banner{
+	border: 2px #0000FF ;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: #09F;
+    padding: 8px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#FFF;
+}
+
+#wrapper {
+	min-width:700px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style:italic;
+	font-size:18px;
+}
+nav {
+	width:70%;
+	background-color:transparent;
+	padding:5px 10px;
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    display:inline-block;
+	background-color:#09F;
+    position:relative;
+}
+
+/* sub navigation */
+nav li ul {    
+	background-color:#09F;
+	position:absolute;
+    left:0;
+    top:40px; /* make this equal to the line-height of the links (specified below) */
+    width:200px;
+}
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:200px; /* make this equal to the width of the sub nav above */
+    margin:0;
+}
+
+/* style all links */
+nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+nav a {
+    color:#FFF;
+    text-decoration:none;
+    display:block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+	color:#300;
+	background-color:#0FF;
+}
+
+/* style sub level links */
+nav li li a {
+    border-bottom: dashed 1px #FFF;
+    margin:0 10px;
+    padding:0;
+}
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+/* hide sub menu links */
+ul.sub-menu {
+    display:none;
+}
+
+/* show arrows for dropdowns */
+nav li.dropdown > a {
+    background-image:url('../images/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+    background-image:url('../images/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}
+
+
+footer{
+	width:70%;
+	height:60px;
+	bottom:10px;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	position:absolute;
 	text-align:center;
+	background:#ee5;
 }

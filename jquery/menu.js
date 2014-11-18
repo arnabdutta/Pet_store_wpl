@@ -1,6 +1,11 @@
-$('nav li ul').hide().removeClass('fallback');
-$('nav li').hover(
-  function () {
-    $('ul', this).stop().slideToggle(300);
-  }
-);
+
+$(document).ready(function() {
+        $( '.dropdown' ).hover(
+            function(){
+                $(this).children('.sub-menu').slideDown(200);
+            },
+            function(){
+                $(this).children('.sub-menu').slideUp(200);
+            }
+        );
+    }); 
