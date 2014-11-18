@@ -1,0 +1,59 @@
+/* CSS Document */
+
+#main_page{
+	/*border:dashed;*/
+	width:60%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#slideshow{
+    box-shadow:1px 1px 1px 5px green;
+	border-radius:2px;
+    height:300px;
+    margin:10px auto;
+    width:600px;
+	float:left;
+}
+
+.display { 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	overflow: hidden; 
+}
+
+.display li {
+	display: none; 
+	float: left; 
+	margin: 0 -100% 0 0; 
+	width: 100%; 
+}
+.display li:first-child {
+display: block; 
+}
+
+.display img { 
+max-width: 100%; 
+vertical-align: top; 
+}
+h2, h3, h4{
+	font-family:arial;
+	font-style:italic;
+	text-align:center;
+}
+
+#quick_links{
+	float:right;
+	border:5px #00C;
+    box-shadow:1px 1px 1px 5px green;
+	padding:20px;
+	margin-top:10px;
+}
+
+#extra{
+	width:60%;
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
+}

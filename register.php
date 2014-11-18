@@ -9,10 +9,11 @@ include("header.php");
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Register Page</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-
+<div id="main_page">
 Page to register...
 
 <br />
@@ -21,5 +22,6 @@ Page to register...
 <br />
 <br />
 <a href="index.php"> Go to home</a>
+</div>
 </body>
 </html>
