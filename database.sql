@@ -1,5 +1,3 @@
-create database petstore;
-use petstore;
 
 CREATE TABLE customer (
     customer_id int not null AUTO_INCREMENT,
@@ -26,7 +24,7 @@ totalamount decimal(10,2) not null,
 PRIMARY KEY (order_id),
 FOREIGN KEY(customer_id) REFERENCES customer(customer_id) ON DELETE CASCADE);
 
-ALTER TABLE ORDER AUTO_INCREMENT = 901;
+ALTER TABLE orders AUTO_INCREMENT = 901;
 
 CREATE TABLE order_details(
 orderdetail_id int not null AUTO_INCREMENT,
@@ -37,7 +35,7 @@ primary key(orderdetail_id),
 FOREIGN KEY(order_id) REFERENCES orders(order_id) ON DELETE CASCADE ON UPDATE CASCADE,
 FOREIGN KEY(pettype_id) REFERENCES pet(pettype_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
-ALTER TABLE ORDER AUTO_INCREMENT = 10001;
+ALTER TABLE order_details AUTO_INCREMENT = 10001;
 
 CREATE TABLE CATEGORY(
 category_id int not null,

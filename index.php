@@ -47,7 +47,7 @@ include("header.php");
 <ul>
 <li>Home</li>
 <li>About Us</li>
-<li> Contact</li>
+<li><a href="profile.php">Profile</a></li>
 <li>Register</li>
 <li>Sign In</li>
 </ul>

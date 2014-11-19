@@ -13,6 +13,7 @@ body{
 
 <div id="banner" align="center" >
 	<h3><strong><em>PET STORE</em></strong></h3>
+  <a href="cart.php" title="Go to Cart"><div align="right" style="padding: 5px; border: dashed; position: absolute; float: right; left: 1064px; top: 38px;">CART</div></a>
 </div>
 
 <div id="wrapper" align="center">
