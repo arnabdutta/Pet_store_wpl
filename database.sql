@@ -7,13 +7,11 @@ CREATE TABLE customer (
 	password varchar(25) not null,
     firstname varchar(80) not null,
     lastname varchar(80) not null,
-    addr1 varchar(80) not null,
-    addr2 varchar(40) null,
+    addr varchar(80) not null,
     city varchar(80) not  null,
     state varchar(80) not null,
     zip varchar(20) not null,
-    country varchar(20) not null,
-    phone varchar(80) not null,
+    phone varchar(15) not null,
 PRIMARY KEY (customer_id));
 
 ALTER TABLE CUSTOMER AUTO_INCREMENT = 9001;
@@ -26,18 +24,9 @@ totalamount decimal(10,2) not null,
 PRIMARY KEY (order_id),
 FOREIGN KEY(customer_id) REFERENCES customer(customer_id) ON DELETE CASCADE);
 
-ALTER TABLE ORDER AUTO_INCREMENT = 901;
+ALTER TABLE ORDERS AUTO_INCREMENT = 901;
 
-CREATE TABLE order_details(
-orderdetail_id int not null AUTO_INCREMENT,
-order_id int not null,
-pettype_id int not null,
-quantity int not null,
-primary key(orderdetail_id),
-FOREIGN KEY(order_id) REFERENCES orders(order_id) ON DELETE CASCADE ON UPDATE CASCADE,
-FOREIGN KEY(pettype_id) REFERENCES pet(pettype_id) ON DELETE CASCADE ON UPDATE CASCADE
-);
-ALTER TABLE ORDER AUTO_INCREMENT = 10001;
+
 
 CREATE TABLE CATEGORY(
 category_id int not null,
@@ -55,6 +44,18 @@ price decimal(10,2) not null,
 primary key (pettype_id),
 FOREIGN KEY(category_id) REFERENCES category(category_id) on DELETE CASCADE ON UPDATE CASCADE
 );
+
+
+CREATE TABLE order_details(
+orderdetail_id int not null AUTO_INCREMENT,
+order_id int not null,
+pettype_id int not null,
+quantity int not null,
+primary key(orderdetail_id),
+FOREIGN KEY(order_id) REFERENCES orders(order_id) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY(pettype_id) REFERENCES pet(pettype_id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+ALTER TABLE order_details AUTO_INCREMENT = 10001;
 
 INSERT INTO CATEGORY VALUES(101,'Dog');
 INSERT INTO CATEGORY VALUES(102,'Cat');
