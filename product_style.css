@@ -1,0 +1,54 @@
+/* CSS Document */
+
+
+
+
+h2, h3, h4{
+	font-family:arial;
+	font-style:italic;
+	text-align:center;
+}
+
+#quick_links{
+	float:right;
+	border:5px #00C;
+    box-shadow:1px 1px 1px 5px green;
+	padding:20px;
+	margin-top:10px;
+}
+
+#extra{
+	width:60%;
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
+}
+
+.category_filter, .price_filter {position:absolute;  left: auto; width: 120px; color: gray;text-decoration-style: solid;
+    
+ padding: 5px;
+    border: 10px ;
+    border-color: yellow;
+      margin: 25px;
+    }
+.category_filter{ top:150px;}
+
+ .price_filter {top:275px;}
+
+.product_main {
+    margin-left:180px;
+margin-right:150px;
+border-color: black;
+border: solid;
+    height: 380px;
+    width: 1000px;
+    overflow: auto;
+}
+
+div > div
+{
+ width: 200px;
+    height: 200px;
+    outline: 1px solid;
+    float: left;
+}
